@@ -1,0 +1,71 @@
+1. Sign-up modal is not loaded when "Get the app" button in the "Text styles, variants and overlays" is clicked
+
+Expected behavior:
+
+- Given the Framer site is loaded
+- And I scroll down to "Text styles, variants and overlays" section
+- When I click on "get the app" button
+- Then the sign-up modal is displayed
+
+https://app.birdeatsbug.com/sessions/bW5iW-E1bmm9HOTmgYeoI3T7Mq8ga-nLYU2lvlTe5Elk
+
+
+2. The email field in the sign-up form has atrribute type "text" instead of "email"
+
+Expected behavior:
+
+- Given the Framer site is loaded
+- When I click on the "Sign-up" button in the header of the site
+- And I type in invalid email and click the submit button
+- Then I should get error validation message for the email
+
+https://app.birdeatsbug.com/sessions/os8TFgROhkkcTinihr4FpAuodGiKoE886zOZnruTHVCI
+
+
+3. The password field in the sign-up form has attribute type "email" instead of "password"
+
+Expected behavior:
+
+- Given the Framer site is loaded
+- When I click on the "Sign-up" button in the header of the site
+- And I type in password
+- Then password characters should be hidden with *
+
+https://app.birdeatsbug.com/sessions/os8TFgROhkkcTinihr4FpAuodGiKoE886zOZnruTHVCI
+
+
+4. Free plan card have a price tag of $15/mo instead of $0/mo or nothing
+
+Expected behavior:
+
+- Given the Framer site is loaded
+- When I click on the "Pricing" navigation button
+- And I see the "Pricing" section
+- Then the free plan card should have $0/mo as price tag
+
+https://app.birdeatsbug.com/sessions/4f8CojHK2CQHDtofRNkjPfhw7W3gAZVaiXFR2awTZBgi
+
+
+5. The features of the three site plans are the same
+
+Expected behavior:
+
+- Given the Framer site is loaded
+- When I click on the "Pricing" navigation button
+- And I see the "Pricing" section
+- Then the features below the price tag in the site plan cards are different
+
+https://app.birdeatsbug.com/sessions/PsndvM-WdLAiGC1DUSXW6cp4kas3NS7fWrjfXtQzKO-E
+
+
+6. "Visit" button in the components cards does not redirect to any page
+
+Expected behavior:
+
+- Given the Framer site is loaded
+- When I click on the "Components" navigation button
+- And scroll down to the "Many types of components to customize" section
+- And click on any of the "Visit" buttons in the cards
+- Then I am redirected to a page
+
+https://app.birdeatsbug.com/sessions/ywoArVx6mPiEIefr92u7ddwQFzWzlw2VPRjUda1gtuaj
