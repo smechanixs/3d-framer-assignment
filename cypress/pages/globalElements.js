@@ -1,15 +1,19 @@
 class globalElements {
     homePageUrl = 'https://mind-wend-913065.framer.app'
+    componentsPageUrl = 'https://mind-wend-913065.framer.app/components'
     updatesPageUrl = 'https://mind-wend-913065.framer.app/updates'
     fullHDRW = 1920
     fullHDRH = 1080
+    pageOverlay = '.framer-1fdeldd'
 
     headerElements = {
-        pricingPageNav: () => cy.get('.framer-1g3amks-container'),
-        updatesPage: () => cy.get('.update-nav-button')
+        pricingPageNav: () => '.framer-1g3amks-container',
+        componentsPageNav: () => '.framer-15kr31b-container',
+        updatesPage: () => '.update-nav-button'
+
     }
     footerElements = {
-        subscribeSection: () => cy.get('.framer-l3ry8h'),
+        subscribeSection: () => '.framer-l3ry8h',
         signupButton: () => '[type="submit"]'
     }
 }

@@ -1,7 +1,7 @@
 class pricingPage {
     elements = {
-        priceText: () => cy.get('.framer-5fq1xp.price'),
-        faqSectionQuestion: () => cy.get('.framer-8l13dv')
+        priceText: () => '.framer-5fq1xp.price',
+        faqSectionQuestion: () => '.framer-8l13dv'
     }
 }
 

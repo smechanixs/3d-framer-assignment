@@ -1,0 +1,26 @@
+9. Does the sign-up modal disappear on click on the background after opened from "Get the app" button
+
+- Given the Framer site is loaded
+- And I see the "get the app" button
+- When I click on the "get the app" button
+- And I click outside of the sign-up modal
+- Then the sign-up modal disappears
+
+10. Does "Get the app" button in the "Text styles, variants and overlays" section opens up the sign-up modal
+
+- Given the Framer site is loaded
+- And I scroll down to "Text styles, variants and overlays" section
+- When I click on "get the app" button
+- Then the sign-up modal is displayed
+
+
+11. Does email and password fields in the sign-up have correct validation messages
+
+
+12. Does free plan have $0/mo on the card
+
+
+13. Are the features of the three site plans different from each other
+
+
+14. Does "Visit" button navigates to any page
