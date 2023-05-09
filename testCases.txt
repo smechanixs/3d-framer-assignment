@@ -9,18 +9,41 @@
 10. Does "Get the app" button in the "Text styles, variants and overlays" section opens up the sign-up modal
 
 - Given the Framer site is loaded
-- And I scroll down to "Text styles, variants and overlays" section
-- When I click on "get the app" button
+- When I scroll down to "Text styles, variants and overlays" section
+- And I click on "get the app" button
 - Then the sign-up modal is displayed
 
 
-11. Does email and password fields in the sign-up have correct validation messages
+11. Does email field have the proper input type
+- Given the Framer site is loaded
+- When I click on the "Sign-up" button in the header of the site
+- And I type in invalid email and click the submit button
+- Then I should get error validation message for the email
 
 
-12. Does free plan have $0/mo on the card
+12. Does password field have the proper input type
+- Given the Framer site is loaded
+- When I click on the "Sign-up" button in the header of the site
+- And I type in password
+- Then password characters are hidden with *
 
 
-13. Are the features of the three site plans different from each other
+13. Does free plan have $0/mo on the card
+- Given the Framer site is loaded
+- When I click on the "Pricing" navigation button
+- And I see the "Pricing" section
+- Then the free plan card should have $0/mo as price tag
+
+14. Are the features of the three site plans different from each other
+- Given the Framer site is loaded
+- When I click on the "Pricing" navigation button
+- And I see the "Pricing" section
+- Then the features below the price tag in the site plan cards are different
 
 
-14. Does "Visit" button navigates to any page
+15. Does "Visit" button redirects to any page
+- Given the Framer site is loaded
+- When I click on the "Components" navigation button
+- And scroll down to the "Many types of components to customize" section
+- And click on any of the "Visit" buttons in the cards
+- Then I am redirected to a page

@@ -9,7 +9,8 @@ class globalElements {
     headerElements = {
         pricingPageNav: () => '.framer-1g3amks-container',
         componentsPageNav: () => '.framer-15kr31b-container',
-        updatesPage: () => '.update-nav-button'
+        updatesPage: () => '.update-nav-button',
+        signupButtonHeader: () => '.framer-xkblh5'
 
     }
     footerElements = {

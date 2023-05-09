@@ -10,6 +10,5 @@ describe('Check if "Get the app" button in the "Text styles, variants and overla
             .click()
         cy.get(homePage.elements.signupModal())
             .should('have.css', 'opacity', 1)
-
     })
 })
