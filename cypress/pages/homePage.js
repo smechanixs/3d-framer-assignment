@@ -1,21 +1,18 @@
 class homePage {
-    visitStr = 'Visit'
 
     elements = {
-        componentsCardsSection: () => '.components-container',
-        cardElement: () => '[data-framer-name="Card"]',
-        cardElementSmall: () => '[data-framer-name="Card Small"]',
-        cardVisitButton: () => '[data-framer-name="Button"]',
+        componentsCardsSection: () => '.framer-160eo7j.components-container',
+        cardVisitButton: () => '.visit-button',
         watchVideoButton: () => '.watch-video-button',
         getTheAppButton: () => '.get-app-button',
         signupModal: () => '[data-framer-name="Modal"]',
         mix3d2dComponentSection: () => '.3DComponent',
         viewIn3dBtn: () => '.3D-button',
-        priceText: () => '.framer-5fq1xp.price',
-        faqSectionQuestion: () => '.framer-8l13dv',
         tSVOSection: () => '.framer-5m0ard',
-        getTheAppButtonTSVOSection: () => '.framer-12ihm1b'
+        getTheAppButtonTSVOSection: () => '.framer-12ihm1b',
+        animation3d: () => 'iframe'
     }
 }
 
 module.exports = new homePage();
+

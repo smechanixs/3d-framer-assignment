@@ -6,7 +6,7 @@ describe('5. Check if the background blurs on "Get the app" button click', () =>
         cy.visit(globalElements.homePageUrl)
         cy.get(homePage.elements.getTheAppButton())
             .click()
-        cy.get(homePage.elements.signupModal())
+        cy.get(globalElements.pageOverlay)
             .should('have.css', 'backdrop-filter')
     })
 })

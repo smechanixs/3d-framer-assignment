@@ -1,7 +1,9 @@
 class pricingPage {
+    faqNumber = 4
+
     elements = {
         priceText: () => '.framer-5fq1xp.price',
-        faqSectionQuestion: () => '.framer-8l13dv',
+        faqSection: () => '.framer-eabl6y',
         freePlanCard: () => '[data-framer-name="Free"]',
         freePlanCardPriceTag: () => '.framer-5fq1xp.price'
     }
