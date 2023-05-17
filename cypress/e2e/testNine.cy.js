@@ -5,11 +5,14 @@ describe('9.Check if the sign-up modal disappear on click on the background afte
     it('clicks on the "Get the app" button and clicks again outside the modal', () => {
         cy.visit(globalElements.homePageUrl)
         cy.get(homePage.elements.getTheAppButton())
+            .first()
             .click()
         //check if the sign-up modal is displayed on the screen
-        cy.get(homePage.elements.signupModal()).should('have.css', 'opacity', '1')
+        cy.get(homePage.elements.signupModal())
+            .should('have.css', 'opacity', '1')
         cy.get(globalElements.pageOverlay)
             .click({force: true})
-        cy.get(homePage.elements.signupModal()).should('have.css', 'opacity', '0')
+        cy.get(homePage.elements.signupModal())
+            .should('have.css', 'opacity', '0')
     })
 })

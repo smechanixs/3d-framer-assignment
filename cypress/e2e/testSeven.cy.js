@@ -5,7 +5,7 @@ describe('7. Check if "get the app" and "watch video" buttons are displayed one 
     it('switches the resolution to iphone-x and checks the order of the buttons', () => {
         cy.visit(globalElements.homePageUrl)
         cy.viewport('iphone-x')
-        cy.get('.framer-15y7aei')
+        cy.get(homePage.elements.btnSection())
             .children().each(($btn, index) => {
                 if (index === 0){
                     cy.wrap($btn)

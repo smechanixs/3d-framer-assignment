@@ -1,71 +1,127 @@
 1. Sign-up modal is not loaded when "Get the app" button in the "Text styles, variants and overlays" is clicked
 
+Steps:
+
+1. Navigate to https://mind-wend-913065.framer.app/.
+2. Scroll down to "Text styles, variants and overlays" section.
+3. Click on the "Get the app" button.
+
+
 Expected behavior:
 
-- Given the Framer site is loaded
-- And I scroll down to "Text styles, variants and overlays" section
-- When I click on "get the app" button
-- Then the sign-up modal is displayed
+The sign-up modal is displayed.
 
 https://app.birdeatsbug.com/sessions/bW5iW-E1bmm9HOTmgYeoI3T7Mq8ga-nLYU2lvlTe5Elk
 
 
-2. The email field in the sign-up form has atrribute type "text" instead of "email"
+
+
+2. The email field in the sign-up form has attribute type "text" instead of "email"
+
+Steps:
+
+1. Navigate to https://mind-wend-913065.framer.app/.
+2. Click on the "Sign-up" button in the header section.
+3. Right-click on the field with the "Email" placeholder and select "Inspect".
+4. In the opened browser console go to type attribute of the field.
+
 
 Expected behavior:
 
-- Given the Framer site is loaded
-- When I click on the "Sign-up" button in the header of the site
-- And I type in invalid email and click the submit button
-- Then I should get error validation message for the email
+The attribute type of the email field is "email" so that the correct validations are applied.
 
 https://app.birdeatsbug.com/sessions/os8TFgROhkkcTinihr4FpAuodGiKoE886zOZnruTHVCI
+
+
 
 
 3. The password field in the sign-up form has attribute type "email" instead of "password"
 
+
+Steps:
+
+1. Navigate to https://mind-wend-913065.framer.app/.
+2. Click on the "Sign-up" button in the header section.
+3. Right-click on the field with the "Password" placeholder and select "Inspect".
+4. In the opened browser console go to type attribute of the field.
+
+
 Expected behavior:
 
-- Given the Framer site is loaded
-- When I click on the "Sign-up" button in the header of the site
-- And I type in password
-- Then password characters should be hidden with *
+The attribute type of the password field is "password" so that the correct validations are applied.
 
 https://app.birdeatsbug.com/sessions/os8TFgROhkkcTinihr4FpAuodGiKoE886zOZnruTHVCI
 
 
-4. Free plan card have a price tag of $15/mo instead of $0/mo or nothing
+
+
+4. Free plan card have a price tag of $15/mo instead of $0/mo
+
+
+Steps:
+
+1. Navigate to https://mind-wend-913065.framer.app/.
+2. Click on the "Pricing" page navigation button.
+
 
 Expected behavior:
 
-- Given the Framer site is loaded
-- When I click on the "Pricing" navigation button
-- And I see the "Pricing" section
-- Then the free plan card should have $0/mo as price tag
+The free plan card has "$0/mo" as a price tag.
 
 https://app.birdeatsbug.com/sessions/4f8CojHK2CQHDtofRNkjPfhw7W3gAZVaiXFR2awTZBgi
 
 
+
+
 5. The features of the three site plans are the same
+
+
+Steps:
+
+1. Navigate to https://mind-wend-913065.framer.app/.
+2. Click on the "Pricing" page navigation button.
+
 
 Expected behavior:
 
-- Given the Framer site is loaded
-- When I click on the "Pricing" navigation button
-- And I see the "Pricing" section
-- Then the features below the price tag in the site plan cards are different
+The features text in the three price plan cards is different.
 
 https://app.birdeatsbug.com/sessions/PsndvM-WdLAiGC1DUSXW6cp4kas3NS7fWrjfXtQzKO-E
 
 
+
+
 6. "Visit" button in the components cards does not redirect to any page
+
+
+Steps:
+
+1. Navigate to https://mind-wend-913065.framer.app/.
+2. Click on the "Components" page navigation button.
+3. Scroll down to "Many types of components to customize" section.
+4. Try to click any of the "Visit" buttons on the cards.
+
 
 Expected behavior:
 
-- Given the Framer site is loaded
-- When I click on the "Components" navigation button
-- And scroll down to the "Many types of components to customize" section
-- And click on any of the "Visit" buttons in the cards
-- Then I am redirected to a page
+The "Visit" button is clickable and the user is redirected to a page.
 
 https://app.birdeatsbug.com/sessions/ywoArVx6mPiEIefr92u7ddwQFzWzlw2VPRjUda1gtuaj
+
+
+
+
+7. Iframe animation in the "Mix 3D and 2D design with Framer" section throttles the CPU to 100%
+
+
+Steps:
+
+1. Navigate to https://mind-wend-913065.framer.app/.
+2. Click on the "Components" page navigation button.
+3. Wait for the Iframe animation to play.
+4. Go to the Windows Task Manager and look at the CPU usage.
+
+
+Expected behavior:
+
+All the content loaded on the webpage is optimized and do not ruin the user UX.

@@ -2,7 +2,7 @@ class globalElements {
     homePageUrl = 'https://mind-wend-913065.framer.app'
     componentsPageUrl = 'https://mind-wend-913065.framer.app/components'
     updatesPageUrl = 'https://mind-wend-913065.framer.app/updates'
-    pageOverlay = '#overlay'
+    pageOverlay = '.framer-vrqh0x'
 
     headerElements = {
         pricingPageNav: () => '.framer-1g3amks-container [data-framer-name="Variant 1"]',
